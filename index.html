@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Botter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+    </div>
+    <div class="container">
+       
+       <!--  <p>Select your name to reveal your Secret Botter:</p> -->
+       <p id="result" style="font-size: 3rem;"></p>
+        <select id="nameSelector">
+            <option value="" disabled selected>Select your name here!</option>
+            <!-- Options will be populated by script.js -->
+        </select>
+        <button id="revealButton">Click To Reveal</button>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

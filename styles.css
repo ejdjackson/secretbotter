@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align the content to the bottom */
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(32, 15, 15, 0.3); /* See-through container */
+    backdrop-filter: blur(3px); /* Optional: Add a subtle blur effect */
+    margin: 0 auto 50px; /* Center horizontally with space at the bottom */
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white; /* Ensure all text inside is white */
+}
+
+/* Add the background image */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('christmas-tree.jpeg');
+    background-size: contain; /* Keep the image aspect ratio */
+    background-position: center top; /* Position image at the top center */
+    background-repeat: no-repeat; /* Prevent tiling */
+    z-index: -1; /* Place it behind the content */
+}
+
+/* Dropdown styles */
+select {
+    width: 80%; /* Make the dropdown wider */
+    padding: 10px 15px; /* Add padding for larger clickable area */
+    font-size: 1.2rem; /* Increase font size */
+    background-color: rgba(25, 11, 11, 0.2); /* Transparent background */
+    color: white; /* White text */
+    border: 2px solid white; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove focus outline */
+    appearance: none; /* Remove default arrow styling for customisation if needed */
+}
+
+/* Dropdown focus and hover effects */
+select:hover, select:focus {
+    background-color: rgba(255, 255, 255, 0.4); /* Slightly lighter background */
+    border-color: #ddd; /* Lighten border on hover/focus */
+}
+
+/* Button styling (optional improvement) */
+button {
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgba(66, 28, 28, 0.2); /* Transparent button background */
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Lighter hover effect */
+    border-color: #ddd;
+}
+
+/* Snowflake styles */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: #fff;
+    font-size: 1.5em;
+    animation: fall linear infinite;
+    opacity: 0.8;
+}
+
+/* Snowflake animation */
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
