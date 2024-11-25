@@ -1,16 +1,16 @@
 // Encrypted assignments from the Python script
 const encryptedAssignments = {
-   'Ed': 'Ulfn',
-'Anne': 'Olol',
-'Rob': 'Ruod',
-'Shoni': 'Kdqqdk',
-'Ol': 'Pdwwkhz',
-'Hannah': 'Vkrql',
-'Rick': 'Hg',
-'Lili': 'Ldlq',
-'Matthew': 'Dqqh',
-'Iain': 'Ure',
-'Orla': 'Ro',
+'Ed': 'Ure',
+'Anne': 'Vkrql',
+'Rob': 'Hg',
+'Shoni': 'Dqqh',
+'Ol': 'Ulfn',
+'Hannah': 'Olol',
+'Rick': 'Kdqqdk',
+'Lili': 'Ro',
+'Matthew': 'Ldlq',
+'Iain': 'Ruod',
+'Orla': 'Pdwwkhz'
 };
 
 // Caesar cipher decryption
