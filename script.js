@@ -48,5 +48,5 @@ revealButton.addEventListener('click', () => {
     }
     const encryptedReceiver = encryptedAssignments[selectedName];
     const secretBotter = caesarCipherDecrypt(encryptedReceiver, 3);
-    result.textContent = `Your Secret Botter is: ${secretBotter}!`;
+    result.innerHTML = `Merry Botmas ${selectedName}!<br><br>Please buy a present for:<br><br> ${secretBotter} !`;
 });
